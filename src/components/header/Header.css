@@ -1,0 +1,262 @@
+.header_wrap {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 930px;
+  position: relative;
+}
+
+.header_nav {
+  height: 200px;
+}
+
+.header_links {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  z-index: 888;
+  content: "";
+}
+
+.header_links h6,
+.gamedetails_links h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #78738e;
+}
+
+.header_links p,
+.gamedetails_links p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.8rem;
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s;
+}
+
+.header_links a,
+.gamedetails_links a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.header_links p:hover,
+.gamedetails_links p:hover {
+  background-color: #f472b6;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.header_navbar {
+  position: absolute;
+  top: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #081624;
+  padding: 1rem;
+  margin: 0 1rem;
+  box-shadow: rgb(244, 114, 182) 0px 2px 15px;
+  z-index: 777;
+}
+
+.navbar_links,
+.extra3-end_links {
+  display: flex;
+}
+
+.navbar_links p,
+.extra3-end_links p .links-ref2 p {
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.navbar_links a:hover,
+.navbar_links i:hover,
+.links-ref2 a:hover,
+.extra3-end_links a:hover {
+  background-color: transparent;
+  color: #b01ba5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar_links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.4rem;
+}
+
+.navbar_links a.active,
+.links-ref2 a.active {
+  background-color: transparent;
+  color: #b01ba5;
+}
+
+.navbar_links a,
+.links-ref2 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+  display: flex;
+}
+
+.navbar_links i {
+  font-size: 20px;
+  color: #9ca3af;
+  transition: all 0.3s;
+}
+
+.navbar_heading h2 {
+  color: #fff;
+}
+
+.navbar_heading span {
+  color: #b01ba5;
+}
+
+.navbar_button button,
+.link_button button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to left, #b01ba5, rgb(46, 24, 84));
+  font-weight: 700;
+}
+
+.navbar_button button::before,
+.link_button button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #b01ba5, rgb(46, 24, 84));
+  cursor: pointer;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.navbar_button button:hover,
+.link_button button:hover {
+  cursor: pointer;
+}
+
+.navbar_button button:hover::before,
+.link_button button:hover::before {
+  opacity: 1;
+}
+
+.menu-wrap {
+  position: relative;
+  display: none;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(46, 24, 84);
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.game_p {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.games_detail {
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  top: 50px;
+  left: 0;
+  color: #000;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: unset;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.game_p:hover .games_detail {
+  display: flex;
+}
+
+.games_detail h4 {
+  color: #000;
+  transition: all 0.3s;
+}
+
+.games_detail h4:hover {
+  color: #b01ba5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-wrap {
+    display: block;
+  }
+  .navbar_links {
+    display: none;
+  }
+  .navbar_button {
+    display: none;
+  }
+
+  .header_navbar {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header_navbar {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header_navbar {
+    width: 80%;
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(100);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}

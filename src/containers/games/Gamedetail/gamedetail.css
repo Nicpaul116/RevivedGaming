@@ -1,0 +1,150 @@
+.gamedetail_wrap {
+  background: linear-gradient(60deg, rgb(79, 23, 85, 0.5), rgb(46, 24, 84, 0.5)),
+    url("../../../assets/samurai.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.gamedetail_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(50deg, rgb(80, 23, 85), rgb(45, 24, 84));
+}
+
+.gamedetail_info img {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+}
+
+.detail_info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.detail_game {
+  padding: 1rem 2rem;
+  text-align: justify;
+}
+
+.rating_sub,
+.rating_sub2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating_sub2 p {
+  color: #625a76;
+  font-size: 18px;
+  padding-right: 1rem;
+  font-weight: 600;
+}
+
+.detail_game h4 {
+  color: #b01ba5;
+  font-size: 20px;
+}
+
+.detail_game h2 {
+  font-size: 50px;
+}
+
+.test_links p,
+.detail_game p,
+.written_info p {
+  text-align: start;
+  color: #625a76;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.rating_sub2 span,
+.test_gamer h6 {
+  color: #b01ba5;
+}
+
+.rating_sub h6 {
+  color: #b01ba5;
+  font-size: 14px;
+}
+
+.rating_info,
+.test_info2 {
+  background: #34164b;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.test_gamer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test_gamer p {
+  color: #fff;
+}
+
+.gamedetails_links {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.writtenby {
+  background-color: #3a1854;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.written_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.written_info h3 {
+  font-size: 25px;
+}
+
+.written_info {
+  padding-left: 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 800px) {
+  .detail_info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .writtenby {
+    flex-direction: column;
+  }
+
+  .gamedetail_info img {
+    height: 300px;
+  }
+
+  .written_info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detail_game {
+    padding: 0;
+  }
+}

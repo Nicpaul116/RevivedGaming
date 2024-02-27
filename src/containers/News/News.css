@@ -1,0 +1,90 @@
+.News_wrap {
+  background: linear-gradient(60deg, rgb(79, 23, 85, 0.5), rgb(46, 24, 84, 0.5)),
+    url("../../assets/watch-dogs-legion-pc-games-playstation-5-playstation-4-xbox-3860x2206-695.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.news_wrap-content {
+  padding: 0 5rem;
+  background: linear-gradient(50deg, rgb(80, 23, 85), rgb(45, 24, 84));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section1_all {
+  padding-right: 2rem;
+}
+
+.section2_all {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.section1_all {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.news_image img {
+  width: 100%;
+}
+
+.news_info h2 {
+  color: #b01ba5;
+  font-size: 35px;
+}
+
+.news_info p {
+  font-size: 18px;
+  padding-right: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.newscontent_wrap {
+  padding-bottom: 2rem;
+  background: #0c062e;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.section1_search form {
+  display: flex;
+  justify-content: end;
+}
+
+.section1_search input::placeholder {
+  color: #b01ba5;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.section1_search input {
+  height: 30px;
+  color: #b01ba5;
+  margin-bottom: 1rem;
+  text-align: right;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .news_wrap-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .news_wrap-content {
+    padding: 1rem;
+  }
+}

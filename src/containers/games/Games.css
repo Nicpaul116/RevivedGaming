@@ -1,0 +1,202 @@
+.game_wrap {
+  background: linear-gradient(60deg, rgb(79, 23, 85, 0.5), rgb(46, 24, 84, 0.5)),
+    url("../../assets/yeah.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.header_nav {
+  height: 200px;
+}
+
+.header_head {
+  padding: 3rem 1rem 0 1rem;
+}
+
+.header_head h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.header_head h5 {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.header_head span {
+  color: #b01ba5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  align-items: center;
+}
+
+.pagination p {
+  margin: 1rem;
+}
+
+.pagination_items {
+  display: flex;
+  flex-direction: row;
+}
+
+.game_list {
+  background: linear-gradient(50deg, rgb(80, 23, 85), rgb(45, 24, 84));
+}
+
+.games_wrap img {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+}
+
+.games_wrap {
+  margin: 1rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  border: 2px solid transparent;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgb(176, 27, 165, 0.8),
+    rgb(12, 6, 46, 0.8)
+  );
+  transition: all 0.2s ease;
+}
+
+.games_wrap:hover {
+  border: 2px solid #fff;
+}
+
+.games_wrap h3 {
+  font-size: 25px;
+  color: #b01ba5;
+}
+
+.games_icons {
+  display: flex;
+}
+
+.games_icons a {
+  color: #fff;
+}
+
+.games_icons h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  height: 30px;
+  width: 30px;
+}
+
+.games_icons h4:hover {
+  background-color: #b01ba5;
+  transform: scale(1.3, 1.3);
+  border-radius: 30px;
+}
+
+.allgames_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.game_page {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.games_genre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.games_genre p {
+  margin: 1rem;
+  background: #625a76;
+  padding: 5px;
+  font-size: 11px;
+  border-radius: 10px;
+}
+
+.page_item {
+  background: #625a76;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+}
+
+.active_page {
+  background: #b01ba5;
+}
+
+.game_content1,
+.game_content3,
+.game_content2 {
+  background: #34164b;
+  padding: 1rem;
+  margin: 1rem;
+  width: 250px;
+  height: 400px;
+}
+
+.game_content {
+  display: flex;
+  flex-direction: column;
+}
+.gamecontent_img {
+  background: url("../../assets/destiny-2-the-final-3840x2160-12747.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 1050px) {
+  .game_page {
+    flex-direction: column;
+  }
+  .game_content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game_content {
+    flex-direction: column;
+  }
+
+  .game_page {
+    padding: 0;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+
+  .pagination p {
+    margin: 1rem 0.8rem;
+  }
+}
