@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Headercontent.css";
+import { Link } from "react-router-dom";
 import arrow from "../../assets/double-arrow.png";
 import Extracontent from "./extra/Extracontent";
 import { content1, online, fighting, racing } from "./content";
@@ -43,12 +44,12 @@ const Headercontent = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida....
           </p>
-          <a href="#1">
+          <Link to="/Games">
             <h6>
               <em>Read more</em>
             </h6>
             <img src={arrow} alt="#" />
-          </a>
+          </Link>
         </div>
         <div className="content_info2">
           <h5>
@@ -60,12 +61,12 @@ const Headercontent = () => {
             tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
             labore suspendisse ultrices gravida....
           </p>
-          <a href="#1">
+          <Link to="/News">
             <h6>
               <em>Read more</em>
             </h6>
             <img src={arrow} alt="#" />
-          </a>
+          </Link>
         </div>
         <div className="content_info3">
           <h5>
@@ -77,12 +78,12 @@ const Headercontent = () => {
             incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
             ultrices gravida ncididunt ut labore ....
           </p>
-          <a href="#1">
+          <Link to="/Games">
             <h6>
               <em>Read more</em>
             </h6>
             <img src={arrow} alt="#" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="content_wrap2">

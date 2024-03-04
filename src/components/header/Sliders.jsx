@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import arrow from "../../assets/solid-right-arrow.png";
 import { SliderData } from "./Slider";
+import { Link } from "react-router-dom";
 import "./Slider.css";
 
 const Slider = ({ slides }) => {
@@ -24,7 +25,9 @@ const Slider = ({ slides }) => {
           Fusce erat dui, venenatis et erat in, vulputate dignissim lacus. Donec
           vitae tempus dolor, sit amet elementum lorem. Ut cursus tempor turpis.
         </p>
-        <button>Read More...</button>
+        <Link to="/News">
+          <button>Read More...</button>
+        </Link>
       </div>
       {SliderData.map((slide, index) => {
         return (
