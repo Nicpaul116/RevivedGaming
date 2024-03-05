@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RevivedGaming/static/css/main.408be392.css",
+    "main.css": "/RevivedGaming/static/css/main.ffacc298.css",
     "main.js": "/RevivedGaming/static/js/main.5ddd7327.js",
     "static/media/Cuphead Launch Trailer.mp4": "/RevivedGaming/static/media/Cuphead Launch Trailer.de5ef742871416967241.mp4",
     "static/media/avatar-frontiers-of-7680x4320-11772.jpg": "/RevivedGaming/static/media/avatar-frontiers-of-7680x4320-11772.4b218c30fb0797203215.jpg",
@@ -65,11 +65,11 @@
     "static/media/wp12593836-ea-sports-fc-24-ultimate-edition-wallpapers.jpg": "/RevivedGaming/static/media/wp12593836-ea-sports-fc-24-ultimate-edition-wallpapers.99b8009357a138a6eaae.jpg",
     "static/media/pro.jpg": "/RevivedGaming/static/media/pro.3806295e9205dc04d31d.jpg",
     "index.html": "/RevivedGaming/index.html",
-    "main.408be392.css.map": "/RevivedGaming/static/css/main.408be392.css.map",
+    "main.ffacc298.css.map": "/RevivedGaming/static/css/main.ffacc298.css.map",
     "main.5ddd7327.js.map": "/RevivedGaming/static/js/main.5ddd7327.js.map"
   },
   "entrypoints": [
-    "static/css/main.408be392.css",
+    "static/css/main.ffacc298.css",
     "static/js/main.5ddd7327.js"
   ]
 }
